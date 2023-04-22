@@ -21,7 +21,7 @@ public class tablesDynamic {
 
 
         //     enter the username in the text box
-        WebElement username = driver.findElement(By.id("ctl00_MainContent_username"));
+       WebElement username = driver.findElement(By.id("ctl00_MainContent_username"));
         username.sendKeys("Tester");
 //        enter the password
         WebElement password = driver.findElement(By.id("ctl00_MainContent_password"));
@@ -49,3 +49,6 @@ public class tablesDynamic {
         }
     }
 }
+
+
+

@@ -43,8 +43,8 @@ changing the id doesnt effect the logic or xpath
         driver.findElement(By.xpath("//b[text()='PIM']")).click();
         List<WebElement> column=driver.findElements(By.xpath("//table[@id='resultTable']/tbody/tr/td[2]"));
         for (int i=0;i< column.size();i++){
-            String text=column.get(i).getText();
-            if (text.equalsIgnoreCase("52384A")){
+            String id=column.get(i).getText();
+            if (id.equalsIgnoreCase("52384A")){
                 System.out.println(i);
                 driver.findElement(By.xpath("//table[@id='resultTable']/tbody/tr[" + (i+1) + "]/td[1]")).click();
             }
